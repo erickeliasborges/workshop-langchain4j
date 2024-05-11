@@ -16,8 +16,10 @@ public class AiModelFactory {
     }
 
     public static ChatLanguageModel createOpenAIChatModel() {
+        // demo é uma chave genérica pra usar o chatGPT para fazer testes
         return OpenAiChatModel.builder()
-                .apiKey(System.getenv("OPENAI_KEY"))
+//                .apiKey(System.getenv("OPENAI_KEY"))
+                .apiKey("demo")
                 .logRequests(true)
                 .build();
     }
